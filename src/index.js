@@ -31,8 +31,6 @@ async function pegaArquivo(caminho_arquivo) {
 export default pegaArquivo;
 
 
-
-
 //Promises com then 
 // function pegaArquivo(caminho_arquivo) {
 //     const encoding = 'UTF-8';
