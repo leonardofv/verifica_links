@@ -5,12 +5,13 @@ import listaValidada from "./http-validacao.js";
 
 const caminho = process.argv;
 
-function imprime(valida, result, identificador = ' ') { //Depois adicionei o identificador para mostrar o nome do arquivo dos links.
+//depois de criarmos checaStatus precisamos colocar imprime como async
+async function imprime(valida, result, identificador = ' ') { //Depois adicionei o identificador para mostrar o nome do arquivo dos links.
 //Inicializei o idenficador com uma str vazia para caso chamar a função e o segundo parâ não ser passado, não printe undefined
     if(valida) {
         console.log(chalk.yellow('Lista validada'),
         chalk.black.bgGreen(identificador),
-        listaValidada(result));
+        await listaValidada(result));
     }else {
         console.log(chalk.yellow('Lista de Links'),
          chalk.black.bgGreen(identificador),
