@@ -8,7 +8,7 @@ function extraiLinks(texto) {
     const resultados = capturas.map(captura => ({[captura[1]]: captura[2]}))
     return resultados.length != 0 ? resultados  : 'Não há links no arquivo';
 };
-//envolver a palvra da chave do objeto entre colchetes para o JS reconhecer como chave
+//envolver a palavra da chave do objeto entre colchetes para o JS reconhecer como chave
 // como {} é a forma que o JS reconhece uma inicialização de função, temos que englobar todo o objeto que está sendo criado por parenteses.
 
 function trataErro(erro) {
