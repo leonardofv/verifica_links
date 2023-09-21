@@ -24,6 +24,10 @@ Exemplo de como usar o chalk
 ```
 console.log(chalk.blue('Hello world!'));
 ```
+Utilizei expressões Regulares para identificar os links do arquivo.md
+```
+const regex = /\[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)/gm;
+```
 
 No arquivo .Json adicionei dois scripts cli e cli:valida já com os caminhos para executar os arquivos
 ```
@@ -97,4 +101,5 @@ Lista validada   [
   }
 ]
 ```
+###Também trabalhei com requisições HTTP com API do node FATCH retornando promessas [FATCH](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
